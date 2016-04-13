@@ -1,0 +1,25 @@
+1.
+	type samba_t, domain alias smbd_t;
+	
+2.
+	allow samba_t user_home_t : file { read write getattr };
+	
+3.
+	allow samba_t sele : process *;
+	allow samba_t user_homedir_t : { dir file } { read getattr };
+	allow samba_t user_homedir_t : dir { search write add_name };
+	allow samba_t user_home_t : file { write };
+	
+4.
+	auditallow user_t user_ssh_key_t : file { write }
+	
+5.
+	type_transition sysadm_t sysadm_tmp_t : file tmp_t;
+
+6.
+	type_transition user_t games_exec_t : process  games_t
+	
+7.
+	allow user_t games_exec_t : file execute;
+	allow user_t games_t : process transition;
+	allow games_t games_exec_t : file entrypoint
