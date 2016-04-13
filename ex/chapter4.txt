@@ -1,0 +1,15 @@
+1.
+	common socket {
+					read, write, bind, connect, listen}
+
+2.
+	class demo inherits socket{
+					connecto, acceptfrom}
+
+3.
+	allow httpd_t httpd_log_t : file append
+
+4.
+	allow httpd_t bin_exec_t : file execute;
+	allow httpd_t bin_t : process transition;
+	allow bin_t bin_exec_t : file entrypoint; 
