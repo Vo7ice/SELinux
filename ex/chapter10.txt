@@ -1,0 +1,10 @@
+1.
+	/etc/passwd system_u:object_r:shadow_t
+	/etc/shadow system_u:object_r:shadow_t
+	/etc/mtab system_u:object_r:etc_runtime_t
+
+2.
+	
+	
+3.
+	portcon tcp 22 system_u:object_r:sshd_t
