@@ -1,9 +1,0 @@
-1.
-	user tom roles { staff_r, sysadm_r };
-	
-2.
-	role sysadm_r types sysadm_mozilla_t;
-	
-3.
-	allow sysadm_r system_r;
-	role_transition sysadm_t initrc_exec_t system_r;
