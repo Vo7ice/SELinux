@@ -1,0 +1,9 @@
+1.
+	
+	
+2.
+	constrain process transition (t1 != t2)
+	
+3.
+	validatetrans { file lnk_file }
+		(( t3 == relabel_any ) or ( t1 != user_tmp_t ))
