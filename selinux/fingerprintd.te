@@ -1,0 +1,34 @@
+type fingerprintd, domain;
+type fingerprintd_exec, exec_type, file_type;
+
+# fingerprintd
+init_daemon_domain(fingerprintd)
+binder_use(fingerprintd)
+
+# need to find KeyStore and add self
+allow fingerprintd fingerprintd_service:service_manager { add find };
+
+# allow HAL module to read dir contents
+allow fingerprintd fingerprintd_data_file:file { create_file_perms };
+
+# allow HAL module to read/write/unlink contents of this dir
+allow fingerprintd fingerprintd_data_file:dir rw_dir_perms;
+
+# Need to add auth tokens to KeyStore
+use_keystore(fingerprintd)
+allow fingerprintd keystore:keystore_key { add_auth };
+
+# For permissions checking
+binder_call(fingerprintd, system_server);
+allow fingerprintd permission_service:service_manager find;
+
+# daizhiling add for goodix_fingerprint begin
+binder_call(fingerprintd, gx_fpd);
+allow fingerprintd gx_fpd_service:service_manager find;
+
+# For Goodix fingerprint
+allow fingerprintd gx_fpd_lib_file:file r_file_perms;
+allow fingerprintd gx_fpd_lib_file:file { getattr read execute execmod };
+allow fingerprintd gx_fpd_lib_file:chr_file { r_file_perms setattr };
+allow fingerprintd gx_fp_lib_file:file rx_file_perms;
+allow fingerprintd gx_fp_lib_file:chr_file { r_file_perms setattr };
