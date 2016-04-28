@@ -14,7 +14,7 @@
 	auditallow user_t user_ssh_key_t : file { write }
 	
 5.
-	type_transition sysadm_t sysadm_tmp_t : file tmp_t;
+	type_transition sysadm_t tmp_t : file sysadm_tmp_t;
 
 6.
 	type_transition user_t games_exec_t : process  games_t
