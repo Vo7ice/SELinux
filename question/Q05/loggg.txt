@@ -1,0 +1,60 @@
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19929): avc: denied { getattr } for path="/nvdata" dev="mmcblk0p18" ino=2 scontext=u:r:shell:s0 tcontext=u:object_r:nvdata_file:s0 tclass=dir permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19930): avc: denied { getattr } for path="/protect_s" dev="mmcblk0p4" ino=2 scontext=u:r:shell:s0 tcontext=u:object_r:protect_s_data_file:s0 tclass=dir permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19931): avc: denied { getattr } for path="/protect_f" dev="mmcblk0p3" ino=2 scontext=u:r:shell:s0 tcontext=u:object_r:protect_f_data_file:s0 tclass=dir permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19932): avc: denied { getattr } for path="/verity_key" dev="rootfs" ino=1060 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19933): avc: denied { getattr } for path="/ueventd.rc" dev="rootfs" ino=1058 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19934): avc: denied { getattr } for path="/ueventd.mt6735.rc" dev="rootfs" ino=1057 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.610  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19935): avc: denied { getattr } for path="/service_contexts" dev="rootfs" ino=1053 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19936): avc: denied { getattr } for path="/sepolicy" dev="rootfs" ino=1052 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19937): avc: denied { getattr } for path="/selinux_version" dev="rootfs" ino=1051 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19938): avc: denied { getattr } for path="/seapp_contexts" dev="rootfs" ino=1050 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19939): avc: denied { getattr } for path="/multi_init.rc" dev="rootfs" ino=39 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19940): avc: denied { getattr } for path="/meta_init.rc" dev="rootfs" ino=37 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19941): avc: denied { getattr } for path="/meta_init.project.rc" dev="rootfs" ino=36 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19942): avc: denied { getattr } for path="/meta_init.modem.rc" dev="rootfs" ino=35 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.620  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19943): avc: denied { getattr } for path="/meta_init.connectivity.rc" dev="rootfs" ino=34 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.630  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19944): avc: denied { getattr } for path="/meta_init.c2k.rc" dev="rootfs" ino=33 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.630  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19945): avc: denied { getattr } for path="/init.zygote64_32.rc" dev="rootfs" ino=32 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.630  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19946): avc: denied { getattr } for path="/init.zygote32.rc" dev="rootfs" ino=31 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.630  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19947): avc: denied { getattr } for path="/init.volte.rc" dev="rootfs" ino=30 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
+
+[ 11-30 09:43:00.630  4353: 4353 W/ls       ]
+type=1400 audit(0.0:19948): avc: denied { getattr } for path="/init.usb.rc" dev="rootfs" ino=29 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=0
